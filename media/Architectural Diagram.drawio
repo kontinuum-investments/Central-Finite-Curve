@@ -1,16 +1,16 @@
-<mxfile modified="2023-12-27T14:11:41.254Z" host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="cmMuobAJXcRkEVvnYMEz" version="22.1.13" type="github">
+<mxfile modified="2023-12-27T14:12:16.301Z" host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="gzJ5Shb8BB6OqspDV4kU" version="22.1.13" type="github">
   <diagram id="WI9T0HZ2pTsCkuznbFz-" name="Page-1">
-    <mxGraphModel dx="1221" dy="1148" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1018" dy="957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="LDG5IO8nCB84uHBybFGN-20" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;labelBackgroundColor=#FFFFFF;fontSize=9;" parent="1" vertex="1">
+        <mxCell id="LDG5IO8nCB84uHBybFGN-20" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;labelBackgroundColor=#FFFFFF;fontSize=9;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="290" y="160" width="560" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="LDG5IO8nCB84uHBybFGN-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;labelBackgroundColor=#FFFFFF;fontSize=9;" parent="1" vertex="1">
+        <mxCell id="LDG5IO8nCB84uHBybFGN-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;labelBackgroundColor=#FFFFFF;fontSize=9;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="465" y="180" width="365" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="LDG5IO8nCB84uHBybFGN-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;labelBackgroundColor=#FFFFFF;fontSize=9;" parent="1" vertex="1">
+        <mxCell id="LDG5IO8nCB84uHBybFGN-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;labelBackgroundColor=#FFFFFF;fontSize=9;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="491" y="200" width="240" height="150" as="geometry" />
         </mxCell>
         <mxCell id="LDG5IO8nCB84uHBybFGN-2" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Citadel&lt;/font&gt;" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.virtual_machine_feature;pointerEvents=1;fontFamily=Georgia;labelBackgroundColor=#FFFFFF;fontSize=9;" parent="1" vertex="1">
