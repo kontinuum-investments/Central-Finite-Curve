@@ -7,7 +7,7 @@ This repository serves as the primary repository for all essential artifacts req
 4. Run the following command:
 
 ```bash
-bash <(curl -s "https://raw.githubusercontent.com/kontinuum-investments/Central-Finite-Curve/production/citadel/scripts/initialize.sh") "{{$CLOUDFLARE_TUNNEL_TOKEN}}"
+bash <(curl -s "https://raw.githubusercontent.com/kontinuum-investments/Central-Finite-Curve/production/citadel/scripts/initialize.sh") "{{$CLOUDFLARE_TUNNEL_TOKEN}}" "{{$GITHUB_ACCESS_TOKEN}}"
 ```
 
 # Microservices

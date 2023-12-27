@@ -117,6 +117,20 @@ add_ssh_public_key(){
 
 
 disable_password_ssh_authentication(){
-  sudo find /etc/ssh/sshd_config.d/ -type f -exec sed -i 's/PasswordAuthentication yes/PasswordAuthentication no/g' {} \;
+  sudo find /etc/ssh/sshd_config.d/ -type f -exec sed -i "s/PasswordAuthentication yes/PasswordAuthentication no/g" {} \;
   sudo systemctl restart ssh
+}
+
+
+trigger_github_action(){
+  local username=$1
+  local repository=$2
+  local message=$3
+  local branch=$4
+  local github_access_token=$5
+
+  curl --request POST \
+  --url "https://api.github.com/repos/$username/$repository/actions/workflows/pipeline.yml/dispatches" \
+  --header "authorization: Bearer $github_access_token" \
+  --data "{\"ref\": \"$branch\", \"inputs\": {\"message\" : \"$message\"}}"
 }

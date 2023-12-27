@@ -2,6 +2,7 @@
 
 # Variables
 cloudflare_tunnel_token=$1
+github_access_token=$2
 
 # Setup dependencies
 source <(curl -s "https://raw.githubusercontent.com/kontinuum-investments/Citadel/production/misson_control/scripts/library.sh")
@@ -21,4 +22,4 @@ install_cloudflare_tunnel
 start_cloudflare_tunnel "$cloudflare_tunnel_token"
 
 # Start the containers
-# TODO
+trigger_github_action "kontinuum-investments" "Website" "Citadel Deployment" "production" "$github_access_token"
