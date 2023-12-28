@@ -73,7 +73,7 @@ stop_container(){
   local container_name=$1
   sudo docker stop "$container_name"
   sudo docker rm "$container_name"
-  sudo docker system prune -a --volumes
+  sudo docker system prune -a --volumes --force
 }
 
 get_docker_env_vars_command(){
