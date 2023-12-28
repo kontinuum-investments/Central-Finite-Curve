@@ -134,3 +134,13 @@ trigger_github_action(){
   --header "authorization: Bearer $github_access_token" \
   --data "{\"ref\": \"$branch\", \"inputs\": {\"message\" : \"$message\"}}"
 }
+
+
+set_environment_environmental_variable(){
+  if [[ $(hostname) == *"-test" ]]
+  then
+      export ENVIRONMENT="Test"
+  else
+      export ENVIRONMENT="Production"
+  fi
+}

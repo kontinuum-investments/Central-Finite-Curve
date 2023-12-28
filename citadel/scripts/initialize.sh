@@ -8,6 +8,7 @@ github_access_token=$2
 source <(curl -s "https://raw.githubusercontent.com/kontinuum-investments/Central-Finite-Curve/production/citadel/scripts/library.sh")
 
 # Change the server configuration
+set_environment_environmental_variable
 disable_password_ssh_authentication
 create_super_user "github"
 add_ssh_public_key "github" "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHjtXQCKhbhrz2Rbf0ssGqujsAk62la+AIPoppzXsG1l"
