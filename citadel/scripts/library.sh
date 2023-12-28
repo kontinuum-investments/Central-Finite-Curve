@@ -52,17 +52,16 @@ start_cloudflare_tunnel_container(){
 
 deploy_container(){
   local image_name=$1
-  local container_port=$2
-  local host_port=$3
-  local env_vars=$4
+  local container_name=$2
+  local container_port=$3
+  local host_port=$4
+  local env_vars=$5
   local docker_env_vars_command=""
-  local container_name=""
   docker_env_vars_command=$(get_docker_env_vars_command "$env_vars")
-  container_name=$(uuidgen)
 
   sudo service docker start
   sudo docker image pull "$image_name"
-  stop_container "$image_name"
+  stop_container "$container_name"
   sudo docker run -d \
     --name="$container_name" \
     --publish 127.0.0.1:$host_port:$container_port/tcp \
@@ -71,12 +70,9 @@ deploy_container(){
 }
 
 stop_container(){
-  local image_name=$1
-  local running_containers=""
-  running_containers=$(sudo docker ps -a -q --filter ancestor="$image_name")
-  if [ -n "$running_containers" ]; then
-      sudo docker rm -f $running_containers
-  fi
+  local container_name=$1
+  sudo docker stop "$container_name"
+  sudo docker rm "$container_name"
 }
 
 get_docker_env_vars_command(){
