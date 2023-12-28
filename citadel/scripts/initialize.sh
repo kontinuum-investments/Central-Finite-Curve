@@ -28,4 +28,5 @@ install_cloudflare_tunnel
 start_cloudflare_tunnel "$cloudflare_tunnel_token"
 
 # Start the containers
-trigger_github_action "kontinuum-investments" "Website" "Citadel Deployment" "production" "$github_access_token"
+trigger_github_action "kontinuum-investments" "Website" "Citadel Deployment" "$(echo $ENVIRONMENT | tr '[:upper:]' '[:lower:]')" "$github_access_token"
+trigger_github_action "kontinuum-investments" "Vita-API" "Citadel Deployment" "$(echo $ENVIRONMENT | tr '[:upper:]' '[:lower:]')" "$github_access_token"
