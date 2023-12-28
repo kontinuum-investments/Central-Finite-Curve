@@ -5,7 +5,7 @@ cloudflare_tunnel_token=$1
 github_access_token=$2
 
 # Setup dependencies
-source <(curl -s "https://raw.githubusercontent.com/kontinuum-investments/Citadel/production/misson_control/scripts/library.sh")
+source <(curl -s "https://raw.githubusercontent.com/kontinuum-investments/Central-Finite-Curve/production/citadel/scripts/library.sh")
 
 # Change the server configuration
 disable_password_ssh_authentication
