@@ -5,9 +5,9 @@ This repository serves as the primary repository for all essential artifacts req
 1. Create a virtual machine
    1. Assign at least 2GB or memory _(Docker's recommended requirement)_
    2. Assign a static public IP to the virtual machine
-3. Set the `citadel` or `citadel-test` A record for the IP address in the DNS records
-4. Create a Cloudflare tunnel
-5. Run the following command:
+2. Set the `citadel` or `citadel-test` A record for the IP address in the DNS records
+3. Create a Cloudflare tunnel
+4. Run the following command:
 
 ```bash
 bash <(curl -s "https://raw.githubusercontent.com/kontinuum-investments/Central-Finite-Curve/production/citadel/scripts/initialize.sh") "{{$CLOUDFLARE_TUNNEL_TOKEN}}" "{{$GITHUB_ACCESS_TOKEN}}"
