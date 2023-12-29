@@ -141,3 +141,16 @@ set_environment_environmental_variable(){
       export ENVIRONMENT="Production"
   fi
 }
+
+
+tail_logs_of_docker_container(){
+  local container_name=$1
+  local is_clear_logs_first=$2
+
+  if [ "TRUE" == "$is_clear_logs_first" ]
+    then
+    sudo echo "" | sudo tee "$(sudo docker inspect --format='{{.LogPath}}' $container_name)"
+  fi
+
+  sudo docker logs -f "$container_name"
+}
