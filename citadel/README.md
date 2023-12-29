@@ -33,9 +33,20 @@ bash <(curl -s "https://raw.githubusercontent.com/kontinuum-investments/Central-
          <li><code>Standard_B1ms</code> size (or higher specifications)</li>
          <li>Username: <code>kavindu</code></li>
          <li>SSH public key source: <code>Use existing public key</code></li>
-         <li><details><summary>SSH public key</summary><code>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDbg7PTGQx0I9MFCmwtaZ9Q95wkfi7SVnhVDo+dQZqgbwMjbZrsC/cq6elLUD8vr2Pf8WSQJElXssenPyz4P3IpMgNBW30rOfvBtm/EXTPU0U
-      +autNl6t3aWc3Pu0EhgtieAsDClUq1PxEo8RqMPZrwfctuIwVZUNOHRN3UnOwPrbKE6mHRJFKXWAqEprQssMqFJQP0Mvr0SxvMf9QSjUbI2kJvWg+1kQO+VkI1mXDfkxslKOpXId9OBEenzqewwyijE0kPlm0xZ2OeG9J4mJBe5CBWt9/h0CJoOy0jUQiFM5rk7ejD7PbOut8qDwSjL
-      +uH3zMKKC00aBt0xYWiqBJnZmN0BfhHC7TNjpQNZZ065zlIpQ6CMGC1qV0Jzo7WRctNPpGr+vJAQ86d+PMPSUeX1k/SfRoV+j3lbkSG6t4pONS1rcLzleGHc3B34zuCqgQMlhXlSGbFVUGI1ugKl2Q9onn5ZjgeLWLVu+eiIM1uQH2ZhRlaPlPXVJ9+Apvcbiv0BAB6SXu3ZgUo7B1EYtdK2eDJYOBSgFn4XozAlRSA6kKP1k+Ms3yLDRv+gIGWnpTDo7hy4QgSTL4VO+jjAX+FXwTF/XxmyKte4KaCtxq0HpTG1oLm9YDg5eP64ihvJOWsqHght7RkW5P7aCipelrXhgjnGOYvs73kIjcy6i75IQ==</code></details></li>
+         <li>
+            <details>
+               <summary>
+                  SSH public key [<code>Production</code>]
+               </summary>
+                  <code>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDbg7PTGQx0I9MFCmwtaZ9Q95wkfi7SVnhVDo+dQZqgbwMjbZrsC/cq6elLUD8vr2Pf8WSQJElXssenPyz4P3IpMgNBW30rOfvBtm/EXTPU0U+autNl6t3aWc3Pu0EhgtieAsDClUq1PxEo8RqMPZrwfctuIwVZUNOHRN3UnOwPrbKE6mHRJFKXWAqEprQssMqFJQP0Mvr0SxvMf9QSjUbI2kJvWg+1kQO+VkI1mXDfkxslKOpXId9OBEenzqewwyijE0kPlm0xZ2OeG9J4mJBe5CBWt9/h0CJoOy0jUQiFM5rk7ejD7PbOut8qDwSjL+uH3zMKKC00aBt0xYWiqBJnZmN0BfhHC7TNjpQNZZ065zlIpQ6CMGC1qV0Jzo7WRctNPpGr+vJAQ86d+PMPSUeX1k/SfRoV+j3lbkSG6t4pONS1rcLzleGHc3B34zuCqgQMlhXlSGbFVUGI1ugKl2Q9onn5ZjgeLWLVu+eiIM1uQH2ZhRlaPlPXVJ9+Apvcbiv0BAB6SXu3ZgUo7B1EYtdK2eDJYOBSgFn4XozAlRSA6kKP1k+Ms3yLDRv+gIGWnpTDo7hy4QgSTL4VO+jjAX+FXwTF/XxmyKte4KaCtxq0HpTG1oLm9YDg5eP64ihvJOWsqHght7RkW5P7aCipelrXhgjnGOYvs73kIjcy6i75IQ==</code>
+            </details>
+            <details>
+               <summary>
+                  SSH public key [<code>Test</code>]
+               </summary>
+                  <code>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDbg7PTGQx0I9MFCmwtaZ9Q95wkfi7SVnhVDo+dQZqgbwMjbZrsC/cq6elLUD8vr2Pf8WSQJElXssenPyz4P3IpMgNBW30rOfvBtm/EXTPU0U+autNl6t3aWc3Pu0EhgtieAsDClUq1PxEo8RqMPZrwfctuIwVZUNOHRN3UnOwPrbKE6mHRJFKXWAqEprQssMqFJQP0Mvr0SxvMf9QSjUbI2kJvWg+1kQO+VkI1mXDfkxslKOpXId9OBEenzqewwyijE0kPlm0xZ2OeG9J4mJBe5CBWt9/h0CJoOy0jUQiFM5rk7ejD7PbOut8qDwSjL+uH3zMKKC00aBt0xYWiqBJnZmN0BfhHC7TNjpQNZZ065zlIpQ6CMGC1qV0Jzo7WRctNPpGr+vJAQ86d+PMPSUeX1k/SfRoV+j3lbkSG6t4pONS1rcLzleGHc3B34zuCqgQMlhXlSGbFVUGI1ugKl2Q9onn5ZjgeLWLVu+eiIM1uQH2ZhRlaPlPXVJ9+Apvcbiv0BAB6SXu3ZgUo7B1EYtdK2eDJYOBSgFn4XozAlRSA6kKP1k+Ms3yLDRv+gIGWnpTDo7hy4QgSTL4VO+jjAX+FXwTF/XxmyKte4KaCtxq0HpTG1oLm9YDg5eP64ihvJOWsqHght7RkW5P7aCipelrXhgjnGOYvs73kIjcy6i75IQ==</code>
+            </details>
+         </li>
       <li>A static public IP (in the <code>Networking</code> section)</li>
       <li>Tick <code>Delete public IP and NIC when VM is deleted</code> (in the <code>Networking</code> section)</li>
       </ol>
