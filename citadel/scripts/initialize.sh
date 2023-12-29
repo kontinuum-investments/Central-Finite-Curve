@@ -10,6 +10,7 @@ github_branch=""
 source <(curl -s "https://raw.githubusercontent.com/kontinuum-investments/Central-Finite-Curve/production/citadel/scripts/library.sh")
 
 # Change the server configuration
+sudo timedatectl set-timezone "Pacific/Auckland"
 set_environment_environmental_variable
 disable_password_ssh_authentication
 create_super_user "github"
