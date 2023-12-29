@@ -61,7 +61,7 @@ bash <(curl -s "https://raw.githubusercontent.com/kontinuum-investments/Central-
 | Vita API | Back-end of personal life automation service  |     `8000`     |  `1002`   | https://vita-api.kih.com.sg | https://vita-api-test.kih.com.sg |
 |   Vita   | Front-end of personal life automation service |     `5000`     |  `1003`   |   https://vita.kih.com.sg   |   https://vita-test.kih.com.sg   |
 
-## How to deploy a new Microservice
+# How to deploy a new Microservice
 1. SSH into the Citadel
 2. Run the following command:
 
@@ -71,8 +71,11 @@ source <(curl -s "https://raw.githubusercontent.com/kontinuum-investments/Centra
 ```
 Where the environmental variables (`$ENV_VARS`) are key-value pairs and are comma-separated _(e.g. `ENVIRONMENT=Production,APP_NAME=Vita`)_
 
+# Settings for needed for GitHub CI/CD
+## Required Repository Variables
+- `CONTAINER_PORT`
+- `HOST_PORT`
 
-# Additional Settings for Development
 ## Required Organisational Secrets
 - `CITADEL_SSH_PRIVATE_KEY`
 
