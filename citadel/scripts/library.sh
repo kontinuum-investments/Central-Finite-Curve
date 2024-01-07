@@ -142,15 +142,11 @@ set_environment_environmental_variable(){
   fi
 }
 
-
-tail_logs_of_docker_container(){
+restart_and_tail_logs_of_docker_container(){
   local container_name=$1
-  local is_clear_logs_first=$2
+  local log_path=$(sudo docker inspect --format='{{.LogPath}}' Vita-API)
 
-  if [ "TRUE" == "$is_clear_logs_first" ]
-    then
-    sudo echo "" | sudo tee "$(sudo docker inspect --format='{{.LogPath}}' $container_name)"
-  fi
-
-  sudo docker logs -f "$container_name"
+  sudo rm -rf $log_path
+  sudo docker restart $container_name
+  sudo docker logs -f $container_name
 }
