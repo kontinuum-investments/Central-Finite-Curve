@@ -144,9 +144,9 @@ set_environment_environmental_variable(){
 
 restart_and_tail_logs_of_docker_container(){
   local container_name=$1
-  local log_path=$(sudo docker inspect --format='{{.LogPath}}' Vita-API)
+  local log_path=$(sudo docker inspect --format='{{.LogPath}}' $container_name)
 
-  sudo rm -rf $log_path
+  echo "" | sudo tee $log_path
   sudo docker restart $container_name
   sudo docker logs -f $container_name
 }
